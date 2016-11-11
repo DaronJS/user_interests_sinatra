@@ -1,0 +1,23 @@
+<h1>Details for: <%= @user %>
+
+<h3>Email Address:</h3>
+  <p><%= @email %></p>
+<div id="interests">
+  <h4>Interests</h4
+  <p>
+    <%= @interests %>
+  </p>
+</div>
+
+<div id='others'>
+  <h4>Other Users</h4>
+<ul>
+<% @user_hash.each_key do |name| %>
+      <% next if name == @user %>
+  <li>
+      <a href="/users/<%= name %>"><%= name %></a>
+  </li>
+<% end %>
+</ul>
+</div>
+

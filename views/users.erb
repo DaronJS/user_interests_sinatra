@@ -1,0 +1,9 @@
+<h3>Users</h3>
+<ul>
+<% @user_hash.each_key do |name| %>
+
+  <li>
+      <a href="/users/<%= name %>"><%= name %></a>
+  </li>
+<% end %>
+</ul>
