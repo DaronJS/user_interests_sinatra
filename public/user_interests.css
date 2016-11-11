@@ -4,10 +4,14 @@
   bottom: 0;
   left: 0;
   padding: 1rem;
-  text-align: left; }
+  text-align: center;
+  z-index: -1
+}
 
 #interests {
    padding-top: 50px;
-   padding-bottom: 150px
+   padding-bottom: 150px;
 }
+
+
 
