@@ -1,9 +1,10 @@
-require 'sinatra'
-require 'sinatra/reloader'
-require 'tilt/erubis'
-require 'psych'
-require 'yaml'
+require "sinatra"
+require "sinatra/reloader"
+require "tilt/erubis"
 
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 
 helpers do
   def count_interests(users_hsh)
